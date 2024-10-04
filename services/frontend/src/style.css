@@ -36,3 +36,16 @@ body {
     color: var(--body-text-color);
     padding: 1rem;
 }
+
+.primary-hover {
+    transition: 0.15s;
+}
+
+.primary-hover:hover {
+    border-color: var(--p-primary-color);
+}
+
+.primary-hover-palette {
+    color: var(--p-primary-contrast-color);
+    background-color: var(--p-primary-color);
+}

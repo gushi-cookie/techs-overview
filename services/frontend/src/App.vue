@@ -4,14 +4,11 @@ import StepList from 'primevue/steplist';
 import Step from 'primevue/step';
 import StepPanel from 'primevue/steppanel';
 import StepPanels from 'primevue/steppanels';
-
-function toggleDarkMode() {
-    document.getElementsByTagName('html')[0].classList.toggle('p-dark');
-}
+import ThemeSwitcher from './components/ThemeSwitcher.vue';
 </script>
 
 <template>
-<Button label="ABC" @click="toggleDarkMode" />
+<ThemeSwitcher />
 <Stepper value="1">
     <StepList>
         <Step value="1">Header I</Step>
