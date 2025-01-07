@@ -3,6 +3,7 @@ services:
     image: techs-overview-frontend
     container_name: techs-overview-frontend
     user: ${CONTAINERS_UID}:${CONTAINERS_GID}
+    runtime: runsc
     build:
       context: ./services/frontend
       target: ${ENVIRONMENT}
@@ -15,6 +16,7 @@ services:
     image: techs-overview-backend
     container_name: techs-overview-backend
     user: ${CONTAINERS_UID}:${CONTAINERS_GID}
+    runtime: runsc
     build:
       context: ./services/backend
       target: ${ENVIRONMENT}
