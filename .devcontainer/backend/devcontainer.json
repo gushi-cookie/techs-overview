@@ -1,0 +1,15 @@
+{
+    "name": "Backend container",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "service": "backend",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/services/backend",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}

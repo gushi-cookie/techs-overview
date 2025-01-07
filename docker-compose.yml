@@ -1,0 +1,22 @@
+services:
+  frontend:
+    image: techs-overview-frontend
+    container_name: techs-overview-frontend
+    user: ${CONTAINERS_UID}:${CONTAINERS_GID}
+    build:
+      context: ./services/frontend
+      target: ${ENVIRONMENT}
+    volumes:
+      - ./:/workspace:cached
+    depends_on:
+      - backend
+
+  backend:
+    image: techs-overview-backend
+    container_name: techs-overview-backend
+    user: ${CONTAINERS_UID}:${CONTAINERS_GID}
+    build:
+      context: ./services/backend
+      target: ${ENVIRONMENT}
+    volumes:
+      - ./:/workspace:cached

@@ -1,0 +1,15 @@
+{
+    "name": "Frontend container",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "service": "frontend",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/services/frontend",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}
